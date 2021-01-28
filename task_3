@@ -1,0 +1,16 @@
+    let a = Math.random();
+    let b = Math.random();
+
+    a < Math.random() ? a = parseInt(a * -10) : a = parseInt(a * 10);
+    b < Math.random() ? b = parseInt(b * -10) : b = parseInt(b * 10);
+    console.log(`a = ${a}\nb = ${b}`);
+
+    if (a >= 0 && b >= 0) {
+        console.log(`Разность а и b: ${a - b}`);
+    }
+    else if (a < 0 && b < 0) {
+        console.log(`Произведение а и b: ${a * b}`);
+    }
+    else {
+        console.log(`Сумма а и b: ${a + b}`);
+    }
