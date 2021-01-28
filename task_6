@@ -1,0 +1,24 @@
+function sum(x, y) { return x + y; }
+function differ(x, y) { return x - y; }
+function multi(x, y) { return x * y; }
+function div(x, y) { return x / y; }
+
+function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case '+': return `Сумма чисел: ${sum(a, b)}`;
+        break;
+        case '-': return `Разность чисел: ${differ(a, b)}`;
+        break;
+        case '*': return `Произведение чисел: ${multi(a, b)}`;
+        break;
+        case '/': return `Частное от деления чисел: ${div(a, b)}`;
+        break;
+        }
+    }
+
+let a = parseFloat(prompt('Введите первое число: '));
+let b = parseFloat(prompt('Введите второе число: '));
+let operation = prompt('Введите необходимое действие (+, -, * или /): ');
+console.log(`Первое число = ${a}\nВторое число = ${b}`);
+
+(b === 0 && operation === '/') ? alert('Деление на ноль запрещено!') : console.log(mathOperation(a, b, operation));
