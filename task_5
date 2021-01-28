@@ -1,0 +1,23 @@
+    function sum(x, y) {
+        return x + y;
+    }
+    function differ(x, y) {
+        return x - y;
+    }
+    function multi(x, y) {
+        return x * y;
+    }
+    function div(x, y) {
+        return x / y;
+    }
+    let a = Math.random();
+    let b = Math.random();
+
+    a < Math.random() ? a = parseInt(a * -100) : a = parseInt(a * 100);
+    b < Math.random() ? b = parseInt(b * -100) : b = parseInt(b * 100);
+    console.log(`a = ${a}\nb = ${b}`);
+
+    console.log(`Сумма чисел: ${sum(a, b)}`);
+    console.log(`Разность чисел: ${differ(a, b)}`);
+    console.log(`Произведение чисел: ${multi(a, b)}`);
+    console.log(`Частное от деления чисел: ${div(a, b)}`);
