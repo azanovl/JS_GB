@@ -1,0 +1,14 @@
+    let basket = [{item: 'computer', price: 1500, quantity: 1},
+        {item: 'mouse', price: 100, quantity: 2},
+        {item: 'keyboard', price: 300, quantity: 3},
+        {item: 'printer', price: 800, quantity: 1},
+        {item: 'scaner', price: 600, quantity: 2}];
+    function countPriceBasket (arr) {
+        let sumBasket = 0;
+        for (key in arr) {
+            sumBasket = sumBasket + arr[key].price * arr[key].quantity;
+        }
+        return sumBasket;
+    }
+
+    alert(countPriceBasket(basket));
